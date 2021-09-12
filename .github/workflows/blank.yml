@@ -53,9 +53,9 @@ jobs:
           date -R
           cd $GITHUB_WORKSPACE
           java -jar yuyue.jar
-          chmod +x go-qseat
-          ./go-qseat
-          echo "::set-end name=status::success"
+          # chmod +x go-qseat
+          # ./go-qseat
+          # echo "::set-end name=status::success"
           
       - name: upload img
         uses: actions/upload-artifact@v2
